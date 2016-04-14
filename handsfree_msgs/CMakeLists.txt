@@ -19,6 +19,9 @@ find_package(catkin REQUIRED COMPONENTS
    GetParamList.srv
    SetParamList.srv
  )
+
+generate_messages(DEPENDENCIES std_msgs)
+
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES handsfree_msgs
